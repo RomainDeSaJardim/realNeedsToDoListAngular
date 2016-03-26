@@ -1,0 +1,22 @@
+{
+  "name": "realNeedsToDoListAngular",
+  "version": "1.0.0",
+  "description": "client side To Do List with Angular",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RomainDeSaJardim/realNeedsToDoListAngular.git"
+  },
+  "keywords": [
+    "ToDoList"
+  ],
+  "author": "Romain De Sa Jardim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RomainDeSaJardim/realNeedsToDoListAngular/issues"
+  },
+  "homepage": "https://github.com/RomainDeSaJardim/realNeedsToDoListAngular"
+}
