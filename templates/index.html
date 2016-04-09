@@ -9,12 +9,12 @@
     </div>
   </nav>
   <ul class="collection">
-    <li class="collection-item" ng-repeat="task in tasks track by $index">
+    <li class="collection-item" ng-repeat="task in tasks track by $index" ng-mouseenter="task.showButtons=true" ng-mouseleave="task.showButtons=false">
       <div class="input-field">
-        <label>Nom</label>
-        <input ng-model="task.name" ng-change="addNewLine(task.name, '{{task.name}}')" type="text" />
+        <label ng-hide="!task.showButtons && !task.focus && $index != tasks.length-1">Nom</label>
+        <input ng-model="task.name" ng-focus="task.focus=true" ng-change="addNewLine(task.name, '{{task.name}}')" ng-blur="task.focus=false" type="text" />
       </div>
-      <a class="btn-floating btn-large waves-effect waves-light red" ng-click="deleteTask($index)" ng-hide="tasks.length === 1 || $index === tasks.length-1"><i class="material-icons">delete</i></a>
+      <a class="btn-floating btn-large waves-effect waves-light red" ng-click="deleteTask($index)" ng-hide="$index === tasks.length-1 || (!task.showButtons && !task.focus)"><i class="material-icons">delete</i></a>
     </li>
   </ul>
 </div>
