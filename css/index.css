@@ -1,0 +1,20 @@
+.task-name{
+  width: 90%;
+  display: inline-block;
+}
+
+.task-flex{
+  flex: 1;
+}
+
+.delete-button{
+  margin-left: 30px;
+  margin-right: 10px;
+  opacity: 1;
+}
+
+.task-line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
