@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/RomainDeSaJardim/realNeedsToDoListAngular/issues"
   },
-  "homepage": "https://github.com/RomainDeSaJardim/realNeedsToDoListAngular"
+  "homepage": "https://github.com/RomainDeSaJardim/realNeedsToDoListAngular",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "materialize-css": "^0.97.6"
+  }
 }

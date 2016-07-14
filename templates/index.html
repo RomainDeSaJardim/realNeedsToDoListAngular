@@ -12,7 +12,7 @@
     <li class="collection-item task-line" ng-repeat="task in tasks track by $index" ng-mouseenter="task.showButtons=true" ng-mouseleave="task.showButtons=false">
       <div class="input-field task-flex" ng-class="{'task-name': ($index != tasks.length-1 && (task.showButtons || task.focus))}">
         <label ng-hide="!task.showButtons && !task.focus && $index != tasks.length-1">Nom</label>
-        <input ng-model="task.name" ng-focus="task.focus=true" ng-change="addNewLine(task.name, '{{task.name}}')" ng-blur="task.focus=false" type="text" />
+        <input ng-set-focus="task.focus" ng-model="task.name" ng-focus="task.focus" ng-change="addNewLine(task.name, '{{task.name}}')" ng-blur="task.focus=false" type="text" />
       </div>
       <a class="btn-floating btn-large waves-effect waves-light red delete-button" ng-click="deleteTask($index)" ng-hide="$index === tasks.length-1 || (!task.showButtons && !task.focus)"><i class="material-icons">delete</i></a>
     </li>

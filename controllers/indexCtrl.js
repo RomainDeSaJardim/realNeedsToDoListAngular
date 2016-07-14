@@ -10,6 +10,7 @@ app.controller('indexCtrl', ['$scope', function($scope){
 
   $scope.init = function(){
     $scope.tasks.push(angular.copy($scope.initialTask));
+    $scope.tasks[0].focus = true;
   }
 
   $scope.init();
@@ -25,6 +26,7 @@ app.controller('indexCtrl', ['$scope', function($scope){
 
   $scope.deleteTask = function(index){
     $scope.tasks.splice(index, 1);
+    $scope.tasks[index].focus = true;
   }
 
 }]);
