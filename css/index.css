@@ -1,16 +1,26 @@
-.task-name{
-  width: 90%;
-  display: inline-block;
-}
-
 .task-flex{
   flex: 1;
+}
+
+.label-field{
+  transition: all 0.2s linear;
+}
+
+.label-field.ng-hide{
+  opacity: 0;
 }
 
 .delete-button{
   margin-left: 30px;
   margin-right: 10px;
   opacity: 1;
+  transition: all 0.2s linear;
+  transition-delay: 0.1s;
+}
+
+.delete-button.ng-hide{
+  opacity:0;
+  transition-delay: 0s;
 }
 
 .task-line{

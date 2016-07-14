@@ -1,4 +1,4 @@
-var app = angular.module('realNeedsToDoListAngular', ['ngRoute']);
+var app = angular.module('realNeedsToDoListAngular', ['ngRoute', 'ngAnimate']);
 
 app.config(['$routeProvider', function($routeProvider){
   $routeProvider.when('/index', {
